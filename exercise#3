@@ -1,0 +1,15 @@
+code#3:
+budget = float(input("Enter the amount you have budgeted for the month: "))
+total_expenses = 0
+while True:
+    expense = (input("Enter an expense (or type done to finish): "))
+    if expense == 'done':
+        break
+    total_expenses += float(expense)
+    difference = budget - total_expenses
+    if difference > 0:
+        print(f"You are under budget by: $ {difference:.2f}")
+    elif difference < 0:
+        print(f"You are over budget by: $ {difference:.2f}")
+    else:
+        print("You are on budget")
