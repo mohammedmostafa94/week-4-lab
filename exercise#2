@@ -1,0 +1,6 @@
+code#2:
+calories_per_min = 4.2
+time_intervals = [10,15,20,25,30]
+for minutes in time_intervals:
+    calories_burned = calories_per_min * minutes
+    print(f"Calories burned after {minutes} minutes: {calories_burned:.2f}")
