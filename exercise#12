@@ -1,0 +1,11 @@
+code#12:
+starting_population = float(input("Enter the starting number of organism: "))
+average_daily_increase = float(input("Enter the average daily increase (as a percentage): "))
+number_of_days = int(input("Enter the number of days to multiply: "))
+daily_increase_rate = average_daily_increase / 100
+current_population = starting_population
+print("\nDay \t Approximate Population")
+print("_______________________________")
+for day in range (1, number_of_days + 1):
+    print(f"{day} \t {current_population:.6f}")
+    current_population += current_population * daily_increase_rate
