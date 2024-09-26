@@ -1,0 +1,9 @@
+code#8:
+total_sum = 0
+while True:
+    number = float(input("Enter a positive number (or a negative number to quit): "))
+    if number < 0:
+        break
+    total_sum += number
+
+print("The sum of the positve numbers entered is:", total_sum)  
