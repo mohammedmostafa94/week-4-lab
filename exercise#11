@@ -1,0 +1,13 @@
+code#11:
+num = int(input("Enter a positive integer (or a negative integer to exit):"))
+factorial = 1
+if num == 0 or num == 1:
+    print("The factorial of ", num, "is 1")
+elif num < 0:
+    print("Exiting the program.")
+        
+else:
+    for i in range (2, num + 1):
+        factorial *= i
+        print("The factorial of ", num, "is", factorial) 
+
